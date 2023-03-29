@@ -12,16 +12,16 @@ This is a suite of ImageJ plugins for performing 2D particle tracking.
 - Trajectory_Linker.java
 - PartTracker_TrajectorySorterInt.java
 
-File descriptions:
+**File descriptions:**
 
-Utility files: 
+_Utility files:_ 
 - Point.java: Class for storing coordinates of Each Points
 - Traj.java: Class for storing Points classified as belonging to the same trajectories 
 
-Preprocessing (optional):
+_Preprocessing (optional):_
 - MovieNormalizer_.java: Computes the time average of the movie (mean image) and normalizes each frame by dividing by the mean image
 
-Processing: 
+_Processing: _
 - Particle_Tracker.java: group above threshold pixels in Points, computes their position by the intensity weighted centroid method and outputs spatiotemporal position and the size (nb of pixels) of each points
 
 - Particle_Tracker_totInt.java: Same as Particle_Tracker but: 
@@ -30,15 +30,17 @@ Processing:
                               
 - Trajectory_Linker.java: connects points into a trajectory following a minimal proximity in the next frame algorithm 
 
-PostProcessing:
+_PostProcessing:_
 - PartTracker_TrajectorySorterInt.java: selects trajectories longer than a user defined threshold and saves them as text file
 
-Instructions:
-Preparations:
+**Instructions:**
+
+_Preparation:_
 - Upload the ParticleTracking folder in the IJ Plugin directory
 - Get jtransforms-2.4.jar from croelmiyn/FourierImageAnalysis/packages and upload to Plugin directory
 
-Execution:
+_Execution:_
+
 1. MovieNormalizer_ : runs without user inputs
 
 2. Particle_Tracker (or Particle_Tracker_totInt):
