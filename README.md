@@ -41,16 +41,21 @@ Execution:
 - Open movie in ImageJ and decide on a threshold if relevant
 - Execute: GUI interface pops up
     Parameters:
+    
     min_particle_radius: minimum radius a group of pixel needs to have to be considered a trackable point 
+    
     separate: if checked, particles with multiple maxima will be split in several particles, using a Gaussian fit of their intensity profiles
     
     Method for threshold: method for separating Points from background
+    
     CutOff: _cutOff_ parameter for the method
+      
       pixel counts as Point if:
-        cutoff_above_background: intensity > median(pixels) + _cutOff_ * standardDeviation(pixels), 
-        threshold: intensity > _cutOff_
-        percentile: intensity in the _cutOff_ brighter pixel fraction
-        AbsThresh_above_bgd: intensity > mean(pixels_in_given_frame) + _cutOff_
+      -  cutoff_above_background: intensity > median(pixels) + _cutOff_ * standardDeviation(pixels), 
+      -  threshold: intensity > _cutOff_
+      -  percentile: intensity in the _cutOff_ brighter pixel fraction
+      -  AbsThresh_above_bgd: intensity > mean(pixels_in_given_frame) + _cutOff_
+ 
 - Output is a Result_Table containing the detected Points in each frame, which needs to be saved (PartTracked_).
 
 3. Trajectory_Linker
