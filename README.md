@@ -64,7 +64,7 @@ _Execution:_
 3. Trajectory_Linker
 - If FIJI: open the PartTracked_ as a ResultTable (File>Import>Results...)
 - Run parameters:
-      - Maximum Distance: maximum distance a particle is allowed to travel between 2 frames
-      - print: if checked, the trajectories and cell positions will be displayed on the movie stack
+  - Maximum Distance: maximum distance a particle is allowed to travel between 2 frames
+  - print: if checked, the trajectories and cell positions will be displayed on the movie stack
 
 4. PartTracker_TrajectorySorterInt: minimum_trajectory_length: minimum duration of a trajectory to be selected. 
